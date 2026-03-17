@@ -14,3 +14,7 @@ resource "aws_iam_user_policy_attachment" "attach_policy" {
   user       = aws_iam_user.demo_user.name
   policy_arn = "arn:aws:iam::aws:policy/AdministratorAccess"
 }
+resource "aws_iam_user_policy_attachment" "attach_policy_1" {
+  user       = aws_iam_user.Hari.name
+  policy_arn = "arn:aws:iam::aws:policy/AdministratorAccess"
+}
