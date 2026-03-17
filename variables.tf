@@ -15,7 +15,7 @@ variable "region" {
 
 variable "ami_id" {
   description = "AMI ID for EC2"
-  default     = "data.aws_ami.amazon_linux.id"  # Example Amazon Linux (update if needed)
+  default     = data.aws_ami.amazon_linux.id  # Example Amazon Linux (update if needed)
 }
 
 variable "instance_type" {
