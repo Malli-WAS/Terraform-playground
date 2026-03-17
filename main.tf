@@ -1,15 +1,12 @@
 provider "aws" {
   region     = "us-east-1"
-
-  
 }
 
 resource "aws_iam_user" "demo_user" {
   name = var.user_name
-  name = var.user_name1
 }
 
-resource "aws_iam_user" "demo_user1" {
+resource "aws_iam_user" "Hari" {
   name = var.user_name1
 }
 
