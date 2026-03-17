@@ -7,5 +7,5 @@ variable "user_name" {
 variable "user_name1" {
   description = "IAM User Name"
   type        = string
-  default     = "Demo-user-1"
+  default     = "Hari"
 }
