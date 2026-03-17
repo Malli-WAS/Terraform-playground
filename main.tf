@@ -18,9 +18,6 @@ resource "aws_iam_user_policy_attachment" "attach_policy_1" {
   user       = aws_iam_user.Hari.name
   policy_arn = "arn:aws:iam::aws:policy/AdministratorAccess"
 }
-provider "aws" {
-  region = var.region
-}
 
 resource "aws_instance" "my_ec2" {
   ami           = var.ami_id
