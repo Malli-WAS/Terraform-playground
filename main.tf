@@ -10,6 +10,10 @@ resource "aws_iam_user" "Hari" {
   name = var.user_name1
 }
 
+resource "aws_iam_user" "Malli" {
+  name = var.user_name2
+}
+
 resource "aws_iam_user_policy_attachment" "attach_policy" {
   user = aws_iam_user.demo_user.name
   policy_arn = "arn:aws:iam::aws:policy/AdministratorAccess"
@@ -20,4 +24,8 @@ resource "aws_iam_user_policy_attachment" "attach_policy_1" {
   policy_arn = "arn:aws:iam::aws:policy/AdministratorAccess"
 }
 
+resource "aws_iam_user_policy_attachment" "attach_policy_2" {
+  user = aws_iam_user.Malli.name
+  policy_arn = "arn:aws:iam::aws:policy/AdministratorAccess"
+}
 

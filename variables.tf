@@ -9,3 +9,9 @@ variable "user_name1" {
   type        = string
   default     = "Hari"
 }
+
+variable "user_name2" {
+  description = "IAM User Name"
+  type        = string
+  default     = "Malli"
+}
