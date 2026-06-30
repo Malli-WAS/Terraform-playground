@@ -19,12 +19,12 @@ resource "aws_iam_user_policy_attachment" "attach_policy" {
   policy_arn = "arn:aws:iam::aws:policy/AdministratorAccess"
 }
 
-resource "aws_iam_user_policy_attachment" "attach_policy_1" {
+resource "aws_iam_user_policy_attachment1" "attach_policy_1" {
   user = aws_iam_user.Hari.name
   policy_arn = "arn:aws:iam::aws:policy/AdministratorAccess"
 }
 
-resource "aws_iam_user_policy_attachment" "attach_policy_2" {
+resource "aws_iam_user_policy_attachment2" "attach_policy_2" {
   user = aws_iam_user.Mallikaraja.name
   policy_arn = "arn:aws:iam::aws:policy/AdministratorAccess"
 }
