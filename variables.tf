@@ -13,5 +13,5 @@ variable "user_name1" {
 variable "user_name2" {
   description = "IAM User Name"
   type        = string
-  default     = "Malli"
+  default     = "Mallikaraja"
 }
