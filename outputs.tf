@@ -1,12 +1,23 @@
-output "iam_user_name" {
+####################
+# IAM Outputs
+####################
+
+output "demo_user" {
   value = aws_iam_user.demo_user.name
 }
-output "iam_user_name_1" {
-  value = aws_iam_user.Hari.name
+
+output "hari_user" {
+  value = aws_iam_user.hari.name
 }
-output "iam_user_name_2" {
-  value = aws_iam_user.Mallikaraja.name
+
+output "mallikaraja_user" {
+  value = aws_iam_user.mallikaraja.name
 }
+
+####################
+# EC2 Outputs
+####################
+
 output "instance_id" {
   value = aws_instance.ec2_instance.id
 }

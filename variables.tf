@@ -1,24 +1,27 @@
+########################
+# IAM Variables
+########################
+
 variable "user_name" {
-  description = "IAM User Name"
-  type        = string
-  default     = "terraform-demo-user"
+  default = "terraform-demo-user"
 }
 
 variable "user_name1" {
-  description = "IAM User Name"
-  type        = string
-  default     = "Hari"
+  default = "Hari"
 }
 
 variable "user_name2" {
-  description = "IAM User Name"
-  type        = string
-  default     = "Mallikaraja"
+  default = "Mallikaraja"
 }
-variable "instance_type" {
-  default = "t2.micro"
-}
+
+########################
+# EC2 Variables
+########################
 
 variable "instance_name" {
   default = "Terraform-EC2"
+}
+
+variable "instance_type" {
+  default = "t2.micro"
 }
