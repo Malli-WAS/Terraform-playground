@@ -13,15 +13,3 @@ variable "user_name1" {
 variable "user_name2" {
   default = "Mallikaraja"
 }
-
-########################
-# EC2 Variables
-########################
-
-variable "instance_name" {
-  default = "Terraform-EC2"
-}
-
-variable "instance_type" {
-  default = "t2.micro"
-}
